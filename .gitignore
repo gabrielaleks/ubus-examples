@@ -1,0 +1,6 @@
+*.apk
+.sdk-include
+
+# request-response binaries
+client
+server
