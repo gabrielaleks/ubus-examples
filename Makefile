@@ -8,7 +8,7 @@ DOCKER = docker run --rm --platform linux/amd64 -v "$(CURDIR)":/work -w /work \
          -e PATH=$(SDK)/toolchain-aarch64_cortex-a53_gcc-14.3.0_musl/bin:/usr/bin:/bin \
          ubus-sdk
 
-EXAMPLES = request-response
+EXAMPLES = request-response events
 BPI     ?= root@192.168.20.1
 
 build:
@@ -17,6 +17,8 @@ build:
 deploy: build
 	scp -O request-response/server $(BPI):/tmp/
 	scp -O request-response/client $(BPI):/tmp/
+	scp -O events/sender $(BPI):/tmp/
+	scp -O events/listener $(BPI):/tmp/
 
 clean:
 	for d in $(EXAMPLES); do $(MAKE) -C $$d clean; done
