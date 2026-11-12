@@ -1,0 +1,13 @@
+{
+  "configurations": [
+    {
+      "name": "OpenWrt",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "${workspaceFolder}/.sdk-include"
+      ],
+      "cStandard": "c11"
+    }
+  ],
+  "version": 4
+}
