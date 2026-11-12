@@ -1,0 +1,14 @@
+BasedOnStyle: Google
+Standard: c++11
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ColumnLimit: 0
+BreakBeforeBraces: Attach
+NamespaceIndentation: All
+IndentCaseLabels: false
+AccessModifierOffset: -4
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AlignAfterOpenBracket: BlockIndent
