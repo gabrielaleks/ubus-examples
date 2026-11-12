@@ -4,3 +4,11 @@
 # request-response binaries
 client
 server
+
+# events binaries
+listener
+sender
+
+# subscriptions binaries
+publisher
+subscriber
