@@ -69,14 +69,6 @@ static struct ubus_object counter_obj = {
     .n_methods = ARRAY_SIZE(counter_methods),
 };
 
-/**
- * 1. Start event loop
- * 2. Open socket to ubusd
- * 3. Pass socket to event loop
- * 4. Register object in ubusd -> `ubus list` shows the object
- * 5. Run the loop and process incoming calls
- * 6. Stop loop appropriately in case the process gets closed
- */
 int main(void) {
     uloop_init();
     struct ubus_context* ctx = ubus_connect(NULL);
