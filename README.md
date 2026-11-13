@@ -102,3 +102,7 @@ docker run --rm --platform linux/amd64 -v "$PWD":/work ubus-sdk \
 ```
 
 `.vscode/c_cpp_properties.json` already points VS Code's C/C++ extension at `.sdk-include`.
+
+## License
+
+[MIT](LICENSE)
